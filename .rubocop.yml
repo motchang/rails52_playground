@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'db/**/*'
+Rails:
+  Enabled: true
+
+require:
+  - rubocop-airbnb
+
+Layout/TrailingBlankLines:
+  EnforcedStyle: final_newline
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
