@@ -7,7 +7,7 @@
     "@types/react-dom": "^16.0.5",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.1",
-    "react": "^16.3.2",
+    "react": "^16.6.3",
     "react-dom": "^16.3.2",
     "react-on-rails": "11.1.8",
     "ts-loader": "5.3.1",
