@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/flyerhzm/bullet.git
-  revision: c6a666f193de9d876691eac81f05090abf66f962
+  revision: 9ae90d31e78aecf626d68da784b73df67a979021
   branch: master
   specs:
-    bullet (5.7.5)
+    bullet (5.9.0)
       activesupport (>= 3.0.0)
-      uniform_notifier (~> 1.11.0)
+      uniform_notifier (~> 1.11)
 
 GEM
   remote: https://rubygems.org/
@@ -286,7 +286,7 @@ GEM
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
-    uniform_notifier (1.11.0)
+    uniform_notifier (1.12.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
