@@ -5,9 +5,6 @@ AllCops:
 Rails:
   Enabled: true
 
-require:
-  - rubocop-airbnb
-
 Layout/TrailingBlankLines:
   EnforcedStyle: final_newline
   Enabled: true

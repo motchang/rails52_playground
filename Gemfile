@@ -70,7 +70,6 @@ group :development do
 
   # Style Linter
   gem 'rubocop'
-  gem 'rubocop-airbnb'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
