@@ -4724,9 +4724,9 @@ react-dom@^16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
-react-on-rails@11.1.8:
-  version "11.1.8"
-  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-11.1.8.tgz#6d5ba72a514cac4ea4efddd8a80f61909d3e9bd7"
+react-on-rails@11.2.1:
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-11.2.1.tgz#b25637bb3d5c6cebd89f4697eb021ede332a3000"
   dependencies:
     "@babel/runtime-corejs2" "^7.0.0"
 
