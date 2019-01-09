@@ -1,0 +1,77 @@
+version: '3'
+volumes:
+  db-data:
+  public-data:
+  tmp-data:
+  log-data:
+  bundle:
+  node_modules:
+services:
+  redis:
+    restart: always
+    image: redis:alpine
+    networks:
+      - default
+  mysql:
+    restart: always
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: bifrost_test
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - default
+    ports:
+      - '13306:3306'
+  rails:
+    build:
+      context: .
+      dockerfile: dockerfile/rails
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - bundle:/webapp/.bundle
+      - public-data:/webapp/public
+      - /webapp/tmp
+      - log-data:/webapp/log
+      - node_modules:/webapp/node_modules
+      - .:/webapp
+    ports:
+      - '3001:3001'
+    networks:
+      - default
+    tty: true
+    stdin_open: true
+    environment:
+      RAILS_ENV: ${RAILS_ENV}
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: ""
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      WEBPACKER_DEV_SERVER_HOST: webpacker
+    command: |
+      /bin/bash -c 'rm -f tmp/pids/server.pid && bin/rails s -p 3001 -b 0.0.0.0 -e ${RAILS_ENV}'
+  webpacker:
+    build:
+      context: .
+      dockerfile: dockerfile/rails
+    volumes:
+      - bundle:/webapp/.bundle
+      - public-data:/webapp/public
+      - /webapp/tmp
+      - log-data:/webapp/log
+      - node_modules:/webapp/node_modules
+      - .:/webapp
+    ports:
+      - '3035:3035'
+    networks:
+      - default
+    tty: true
+    stdin_open: true
+    environment:
+      RAILS_ENV: ${RAILS_ENV}
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    command: |
+      /bin/bash -c 'rm -rf public/packs/* || true && bundle exec rake react_on_rails:locale && bin/webpack-dev-server'
