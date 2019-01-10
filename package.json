@@ -2,21 +2,21 @@
   "name": "rails52_playground",
   "private": true,
   "dependencies": {
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "7.2.3",
+    "@babel/preset-react": "7.0.0",
     "@rails/webpacker": "https://github.com/rails/webpacker",
-    "@types/react": "^16.7.18",
-    "@types/react-dom": "^16.0.11",
-    "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "@types/react": "16.7.18",
+    "@types/react-dom": "16.0.11",
+    "prop-types": "15.6.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "react-on-rails": "11.2.2",
     "ts-loader": "5.3.3",
-    "typescript": "^3.2.2",
-    "webpack": "4",
-    "webpack-cli": "^3.2.1"
+    "typescript": "3.2.2",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.2.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "3.1.14"
   }
 }
