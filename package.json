@@ -8,7 +8,7 @@
     "@types/react": "16.7.20",
     "@types/react-dom": "16.0.11",
     "prop-types": "15.6.2",
-    "react": "16.7.0",
+    "react": "16.8.1",
     "react-dom": "16.7.0",
     "react-on-rails": "11.2.2",
     "ts-loader": "5.3.3",
