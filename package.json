@@ -2,7 +2,7 @@
   "name": "rails52_playground",
   "private": true,
   "dependencies": {
-    "@babel/preset-env": "7.3.1",
+    "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
     "@rails/webpacker": "https://github.com/rails/webpacker",
     "@types/react": "16.8.5",
