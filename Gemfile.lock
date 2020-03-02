@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/flyerhzm/bullet.git
-  revision: 4ca6f6a43c769fac3a94214c382536f3eb4453d9
+  revision: 4da22124c3dc9b79b3fa972516faf210dec644f2
   branch: master
   specs:
     bullet (6.1.0)
