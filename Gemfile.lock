@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/flyerhzm/bullet.git
-  revision: 72206158e42afd2a969413aea40935aaee9a494a
+  revision: 25b5c455153a18fae8a196ba3362b3805c319ce3
   branch: master
   specs:
     bullet (6.1.2)
@@ -303,7 +303,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (2.0.3)
+    tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
