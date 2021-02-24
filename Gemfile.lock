@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/flyerhzm/bullet.git
-  revision: 072b8e5cd0e3f9a6a7f2c3ebef9e6233ba10a31f
+  revision: 08e86b57e865456a36b86a50308f32031d9e3493
   branch: master
   specs:
     bullet (6.1.3)
@@ -167,7 +167,7 @@ GEM
     mini_portile2 (2.5.0)
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
-    minitest (5.14.3)
+    minitest (5.14.4)
     msgpack (1.4.2)
     mysql2 (0.5.3)
     nio4r (2.5.5)
