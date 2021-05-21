@@ -10,3 +10,12 @@ updates:
   - motchang
   assignees:
   - motchang
+- package-ecosystem: yarn
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - motchang
+  assignees:
+  - motchang
