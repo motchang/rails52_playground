@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/flyerhzm/bullet.git
-  revision: 59a5b92cfdb4145069cddced054d7ccb2b574c30
+  revision: 1d06a921d49a5a69fb4bca0089bc4b7a66a55080
   branch: master
   specs:
     bullet (6.1.4)
@@ -81,7 +81,7 @@ GEM
     builder (3.2.4)
     byebug (11.1.3)
     coderay (1.1.2)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     config (3.1.0)
       deep_merge (~> 1.2, >= 1.2.1)
       dry-validation (~> 1.0, >= 1.0.0)
